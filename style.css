@@ -1,0 +1,66 @@
+*{box-sizing: border-box;}  /*Свойства width и height включают в себя значения padding и border, 
+но не margin.*/
+
+body, h1, h2, h3, h4, p, a {
+  margin: 0;  /* внешний отступ*/
+  font-size: 100%; /* размер текста*/
+  font-weight: normal; /* жирность*/
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Inter', sans-serif;  /*шрифт */
+}
+
+.header {
+  height: 100vh; /* длина*/
+  background-color: #eee; /*  цвет фона */
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
+  background-size: cover;    /* высота и ширина равнялась ширине или высоте блока. */
+  background-position: center; /* изображение по центру */
+  text-align: center; /* горизонтально текст по центру */
+}
+
+.header-title {
+  font-size: 140px; /* размер текста*/
+  color: white; /* цвет текста*/
+  text-transform: uppercase; /* верзний регистр букв*/
+  font-weight: 500; /* жирность*/
+  margin: auto;
+}
+
+.overlay {   /* 4 праивла верстки*/ 
+  width: 100%; /* ширина*/ 
+  height: 100%; /* длина*/
+  background-color: rgba(0, 0, 0, .5);display: flex;}  /* цвет*/ 
+
+.content { /* все блоки */ 
+  font-size:0; /* размер текста*/
+  width:790px; /* ширина*/ 
+  margin: 100px auto 50px ;} /* внешний отступ*/
+
+.card{ /* карточки */ 
+  width:350px;
+  margin-bottom:60px;
+  margin-right:90px;
+  padding:45px 45px 70px; /* внутренний отступ*/   /* (верх + бока + низ) или ((верх и низ) + бока)*/
+  display:inline-block; /* Элемент отображается, как строчный, но появляется возможность применять к нему свойства, доступные только блочным элементам (например: margin, padding).*/
+  box-shadow: 4px 4px 5px rgba(107, 110, 110, 0.4);} /*право низ размытие цвет*/
+
+.no-right-margin {
+  margin-right: 0;} /* внешний отступ право*/
+
+.card-title{ 
+  font-size: 24px; /* размер текста*/
+  font-weight: 500; /* жирность*/
+  margin-bottom:10px;} /* внешний отступ низ*/
+
+.card-text{
+  font-size: 16px;} /* размер текста*/
+
+.card-image{ 
+  width:100%; /* ширина*/ 
+  margin-bottom:25px;} /* внешний отступ низ*/
+.footer{height: 300px; background-color: black;display: flex;} 
+.footer-author{font-size:24px; color:white;margin: auto;}
